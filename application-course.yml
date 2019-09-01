@@ -8,7 +8,7 @@ server:
 spring:
   profiles: dev #开发环境
   application:
-    name: HRM-COURSE-DEV
+    name: HRM-COURSE
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3306/hrm_course
@@ -20,7 +20,7 @@ server:
 spring:
   profiles: test #测试环境
   application:
-    name: HRM-COURSE-TEST
+    name: HRM-COURSE
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3306/hrm_course
