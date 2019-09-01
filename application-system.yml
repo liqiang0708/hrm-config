@@ -1,0 +1,32 @@
+spring:
+  profiles:
+    active:
+    - dev
+---
+server:
+  port: 9001
+spring:
+  profiles: dev #开发环境
+  application:
+    name: HRM-SYSTEM-DEV
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/hrm_system
+    username: root
+    password: 123456
+---
+server:
+  port: 9876
+spring:
+  profiles: test #测试环境
+  application:
+    name: HRM-SYSTEM-TEST
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/hrm_system
+    username: root
+    password: 123456
+---
+mybatis-plus:
+  mapper-locations: classpath:com/liqiang/hrm/mapper/*Mapper.xml
+  type-aliases-package: com.liqiang.hrm.domain,com.liqiang.hrm.query
