@@ -8,7 +8,7 @@ server:
 spring:
   profiles: dev #开发环境
   application:
-    name: HRM-SYSTEM-DEV
+    name: HRM-SYSTEM
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3306/hrm_system
@@ -16,11 +16,11 @@ spring:
     password: 123456
 ---
 server:
-  port: 9876
+  port: 9001
 spring:
-  profiles: test #测试环境
+  profiles: test #测试环境 -TEST
   application:
-    name: HRM-SYSTEM-TEST
+    name: HRM-SYSTEM
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3306/hrm_system
