@@ -18,9 +18,9 @@ spring:
 server:
   port: 9001
 spring:
-  profiles: test #测试环境 -TEST
+  profiles: test #测试环境 
   application:
-    name: HRM-SYSTEM
+    name: HRM-SYSTEM # 这里取名就是注册到Eureka的名字，如果开发HRM-SYSTEM-DEV和测试名字HRM-SYSTEM-TEST不一样，那么zuul里面映射不好配置的
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3306/hrm_system
