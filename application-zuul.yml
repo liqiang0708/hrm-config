@@ -9,8 +9,12 @@ zuul:
     system.path: /system/** # 把/system打头的所有请求都转发给hrm-system
     course.serviceId: hrm-course #  需要被通过网关访问的服务的服务名    注释放开后，空格变少，，就会不生效，，，切记！！
     course.path: /course/** # 把/course打头的所有请求都转发给hrm-course
-    fastdfs.serviceId: hrm-fastdfs #  需要被通过网关访问的服务的服务名    注释放开后，空格变少，，就会不生效，，，切记！！
-    fastdfs.path: /fastdfs/** # 把/fastdfs打头的所有请求都转发给hrm-fastdfs
+    fastdfs.serviceId: hrm-fastdfs
+    fastdfs.path: /fastdfs/**
+    es.serviceId: hrm-elasticsearch 
+    es.path: /es/**
+    redis.serviceId: hrm-redis 
+    redis.path: /redis/**
   ignored-services: "*"
   prefix: /services
   retryable: true #是否重试
