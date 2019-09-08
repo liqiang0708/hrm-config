@@ -15,6 +15,8 @@ zuul:
     es.path: /es/**
     redis.serviceId: hrm-redis 
     redis.path: /redis/**
+    pages.serviceId: hrm-pages 
+    pages.path: /pages/**
   ignored-services: "*"
   prefix: /services
   retryable: true #是否重试
